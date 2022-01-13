@@ -11,6 +11,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+		<script type="text/javascript">
+
+			var doRelocation = function() {
+			
+				var currentWidth = window.innerWidth,
+					breakpoint = 737,
+					newLocation = 'index-vertical.html';
+			
+				if (currentWidth < breakpoint) {
+					window.location.replace(newLocation);
+				}
+			
+			}
+			
+			doRelocation();
+			
+			window.addEventListener('resize', doRelocation);
+			
+		</script>
+
 	</head>
 	<body class="is-preload">
 
@@ -71,7 +92,6 @@
 									<li>										
 										<h3>Link prediction exploiting clustering</h3>
 										<p>several techniques that try to reduce the training time of a model for link prediction by exploiting clustering</p>
-										<ceter>
 									</li>
 									<li>
 										<h3>Disease-Gene Association Networks</h3>
@@ -160,7 +180,7 @@
 									</li>
 								</ul>
 								<ul class="features">
-									<li>
+									<li>	
 										<a href="https://github.com/Monti03/Three-Players-Three-Valued-Valuation-Functions-EFX-Allocation" class="button">Learn More on Github</a>
 									</li>
 									<li>
